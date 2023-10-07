@@ -17,4 +17,8 @@ const projectsCollection = defineCollection({
         }),
         tags: z.array(z.string()),
     })
-})
+});
+
+export const collections = {
+    projects: projectsCollection,
+}
