@@ -1,7 +1,7 @@
 ---
 active: false
-title: "Wapno Info"
-date: 2021-03-01
+title: "Coca Cola Magic"
+date: 2021-02-01
 description: ""
 links: {
     github: "",
@@ -12,5 +12,5 @@ image: {
     url: "",
     alt: "redacted",
 }
-tags: ["Wordpress", "ACF", "Bootstrap"]
+tags: []
 ---
