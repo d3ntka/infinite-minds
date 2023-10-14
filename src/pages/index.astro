@@ -1,10 +1,23 @@
 ---
 import Layout from '../layouts/Layout.astro';
-// import Card from '../components/Card.astro';
+import About from '../components/About.astro';
+import Skills from '../components/Skills.astro';
+import ProjectList from '../components/ProjectList.astro';
+
 ---
 
 <Layout title="Into the Infinite">
-	<main>
-		
+	<main class="">
+		<div class="container">
+
+			<div class="max-w-screen-md py-6">
+				<About />
+			</div>
+
+			<Skills />
+
+			<ProjectList />
+
+		</div>
 	</main>
 </Layout>

@@ -1,0 +1,36 @@
+---
+import type { CollectionEntry } from "astro:content";
+interface Props {
+  item: CollectionEntry<'projects'>;
+}
+
+const { item } = Astro.props;
+const project = item.data;
+---
+
+<li class="card border border-light text-light p-6 rounded-lg">
+  <h4 class="text-3xl">
+    {project.title}
+  </h4>
+  <div class="italic font-medium">
+    {project.description}
+  </div>
+  <div class="tags flex flex-wrap gap-4 text-lg">
+    {
+      project.tags.map((tag) => (
+        <span class="tag text-light/80">
+          {tag}
+        </span>
+      ))
+    }
+  </div>
+  <div class="flex gap-4">
+    { project.links.github && <a href={project.links.github} >Github</a> }
+    { project.links.prod && <a href={project.links.prod} >Site &rarr;</a> }
+    { project.links.dev && <a href={project.links.dev} >Dev </a> }
+  </div>
+
+  <p>
+    <slot />
+  </p>
+</li>

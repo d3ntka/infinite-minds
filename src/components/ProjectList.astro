@@ -1,0 +1,17 @@
+---
+import { getCollection } from "astro:content";
+
+import Project from "../components/Project.astro";
+const shownProjects = await getCollection("projects", ({data}) => {
+    return data.active === true;
+});
+---
+
+
+<ul class="grid gap-6">
+    {
+        shownProjects.map((project) => (
+            <Project item={project}></Project>
+        ))
+    }
+</ul>
