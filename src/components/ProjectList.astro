@@ -7,8 +7,8 @@ const shownProjects = await getCollection("projects", ({data}) => {
 });
 ---
 
-
-<ul class="grid gap-6">
+<h2 class="text-xl uppercase font-medium border-b-4 border-red inline-block pe-4 mb-6 mt-10">Projects</h2>
+<ul class="grid md:grid-cols-2 gap-6">
     {
         shownProjects.map((project) => (
             <Project item={project}></Project>

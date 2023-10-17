@@ -1,29 +1,30 @@
 ---
 interface Props {
-	title: string;
+  title: string;
 }
 
 import "../styles/main.css";
 
 import { ViewTransitions } from "astro:transitions";
 import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
 const { title } = Astro.props;
 ---
 
 <!doctype html>
 <html lang="en" class="bg-dark text-light">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-		<ViewTransitions />
-	</head>
-	<body>
-		<Header />
-		<slot />
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    <ViewTransitions />
+  </head>
+  <body>
+    <Header />
+    <slot />
+    <Footer />
+  </body>
 </html>
-

@@ -1,0 +1,17 @@
+---
+interface Props {
+    color: string;
+    title: string;
+};
+
+const { title, color } = Astro.props;
+---
+
+<div>
+    <h2 class=`text-lg font-medium tracking-wider uppercase border-b-4 border-${color} inline-block pe-4`>
+      {title}
+    </h2>
+    <ul class=`mb-10 pt-4 pb-2 grid gap-4 leading-tight text-xl border-l-4 border-${color} ps-6`>
+        <slot />
+    </ul>
+</div>

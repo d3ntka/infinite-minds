@@ -1,4 +1,30 @@
 ---
-const email = "infinitemindsdev@gmail.com";
-const city = "Cracow";
+import { Icon } from 'astro-icon';
+const email = "msilto:infinitemindsdev@gmail.com";
+const githubURL = "https://github.com/d3ntka";
+const linkedinURL = "https://www.linkedin.com/in/mariusz-denenfeld-5935871ab/";
+const iconClass ="w-10 h-10 block hover:text-orange svg:img-contain svg-current";
 ---
+<div class="grid sm:grid-flow-col justify-between gap-1">
+    <div class="text-xl uppercase font-semibold tracking-widest">Call the <span class="animate-colors">Infinite</span></div>
+    <div>
+        <div class="text-xl uppercase tracking-wider">Find <span class="animate-colors">me</span></div>
+        <div class="flex gap-4 items-center pt-2">
+            <div>
+                <a href={email} title="email" class={iconClass}>
+                    <Icon name="email" />
+                </a>
+            </div>
+            <div>
+                <a href={githubURL} title="github profile" target="_blank" class={iconClass}>
+                    <Icon name="github-mark" />
+                </a>
+            </div>
+            <div>
+                <a href={linkedinURL} title="linkedin profile" target="_blank" class={iconClass}>
+                    <Icon name="linkedin" />
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

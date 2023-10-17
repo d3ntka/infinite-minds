@@ -6,28 +6,32 @@ interface Props {
 
 const { item } = Astro.props;
 const project = item.data;
+
+const cardBase = "grid gap-2 p-6 transition-all duration-300";
+const cardFull = "dark text-dark bg-light border-orange border-b-4 border-r-4 hover:border-teal";
+const cardOutline = "border-3 ring-0 border-light text-light ring-orange ring-inset hover:ring";
 ---
 
-<li class="card border border-light text-light p-6 rounded-lg">
-  <h4 class="text-3xl">
+<li class=`card ${cardBase} ${cardFull}`>
+  <h4 class="text-2xl font-medium tracking-wider pb-2 uppercase">
     {project.title}
   </h4>
-  <div class="italic font-medium">
+  <div class="italic font-semibold pb-2">
     {project.description}
   </div>
-  <div class="tags flex flex-wrap gap-4 text-lg">
+  <div class="tags uppercase text-sm font-medium flex flex-wrap gap-x-4 gap-y-2 leading-none pb-4">
     {
       project.tags.map((tag) => (
-        <span class="tag text-light/80">
+        <span class="tag text-light/80 dark:text-gray">
           {tag}
         </span>
       ))
     }
   </div>
-  <div class="flex gap-4">
-    { project.links.github && <a href={project.links.github} >Github</a> }
-    { project.links.prod && <a href={project.links.prod} >Site &rarr;</a> }
-    { project.links.dev && <a href={project.links.dev} >Dev </a> }
+  <div class="flex gap-4 leading-tight font-medium uppercase">
+    { project.links.github && <a class="hover:text-orange transition" href={project.links.github} >Github &rarr;</a> }
+    { project.links.prod && <a class="hover:text-orange transition" href={project.links.prod} >Site &rarr;</a> }
+    { project.links.dev && <a class="hover:text-orange transition" href={project.links.dev} >Staging &rarr;</a> }
   </div>
 
   <p>

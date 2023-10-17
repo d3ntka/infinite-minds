@@ -1,26 +1,44 @@
 ---
+import SkillsCard from "./SkillsCard.astro";
+
 const aspirations = ["Self-taught", "Striving for Quality", "Clean code"];
 const softSkills = [
   "Working with a team",
   "Sharing knowledge",
   "Ability to teach/mentor",
-  "Translating client→tech & tech → client language",
+  "Translating client → tech & tech → client language",
   "Understanding clients needs",
+  "Willingness to learn",
+  ...aspirations,
 ];
-const softwareSkills = {
-  HTML: 90,
-  CSS: 80,
-  JS: 70,
-  PHP: 60,
-  RWD: 80,
-  WordPress: 70,
-  ACF: 80,
-  "Bundlers (Vite, Webpack)": 60,
-  Tailwind: 80,
-  Bootstrap: 70,
-  "Laravel Blade": 60,
-  AlpineJS: 60,
-};
+// const softwareSkills = {
+//   HTML: 90,
+//   CSS: 80,
+//   JS: 70,
+//   PHP: 60,
+//   RWD: 80,
+//   WordPress: 70,
+//   ACF: 80,
+//   "Bundlers (Vite, Webpack)": 60,
+//   Tailwind: 80,
+//   Bootstrap: 70,
+//   "Laravel Blade": 60,
+//   AlpineJS: 60,
+// };
+const softwareSkills = [
+  "HTML",
+  "CSS",
+  "JS",
+  "PHP",
+  "RWD",
+  "WordPress",
+  "ACF",
+  "Bundlers ( Webpack)",
+  "TailwindCSS",
+  "Bootstrap 5",
+  "Laravel Blade",
+  "AlpineJS",
+];
 const acronyms = ["RWD", "DRY", "KISS"];
 const knowledge = [
   "XD/PSD/Figma to Working Website",
@@ -31,6 +49,19 @@ const knowledge = [
   "VSCode",
   "Hosting",
   "Domains",
+  ...acronyms,
 ];
 const learning = ["Astro", "React", "Typescript"];
 ---
+
+<div class="grid gap-6 md:grid-cols-3">
+  <SkillsCard title="Software" color="red">
+    {softwareSkills.map((skill) => <li>{skill}</li>)}
+  </SkillsCard>
+  <SkillsCard title="Soft skills" color="orange">
+    {softSkills.map((skill) => <li>{skill}</li>)}
+  </SkillsCard>
+  <SkillsCard title="Knowledge" color="teal">
+    {knowledge.map((skill) => <li>{skill}</li>)}
+  </SkillsCard>
+</div>
