@@ -1,5 +1,5 @@
 ---
-active: true
+active: false
 title: "[Redacted]"
 description: "Landing page for new game"
 date: 2023-09-01

@@ -2,7 +2,7 @@
 active: true
 title: "The Thaumaturge"
 date: 2022-11-01
-description: ""
+description: "Landing page for a game"
 links: {
     github: "",
     prod: "https://thaumaturgethegame.com/",

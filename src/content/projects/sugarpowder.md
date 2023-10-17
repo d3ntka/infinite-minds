@@ -2,7 +2,7 @@
 active: true
 title: "Sugarpowder"
 date: 2023-08-01
-description: ""
+description: "Shop on prestashop"
 links: {
     github: "",
     prod: "",

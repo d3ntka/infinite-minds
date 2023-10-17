@@ -2,7 +2,7 @@
 active: true
 title: "[Redacted]"
 date: 2022-10-01
-description: "Front in TALL stack for a SaaS project"
+description: "Front-end in TALL stack for a SaaS store"
 links: {
     github: "",
     prod: "",

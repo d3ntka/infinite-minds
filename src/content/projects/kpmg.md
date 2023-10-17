@@ -2,7 +2,7 @@
 active: true
 title: "Generation KPMG"
 date: 2023-03-01
-description: ""
+description: "Integration with eRecruiter + jobs offers search"
 links: {
     github: "",
     prod: "https://generationkpmg.pl",

@@ -2,7 +2,7 @@
 active: true
 title: 'Etisoft'
 date: 2022-09-01
-description: ""
+description: "Fullpage site with big scrollable lottie animations"
 links: {
     github: "",
     prod: "https://ess.etisoft.pl/",
