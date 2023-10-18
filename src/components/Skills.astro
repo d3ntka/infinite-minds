@@ -11,7 +11,7 @@ const softSkills = [
   "Willingness to learn",
   ...aspirations,
 ];
-// const softwareSkills = {
+// const technology = {
 //   HTML: 90,
 //   CSS: 80,
 //   JS: 70,
@@ -25,7 +25,7 @@ const softSkills = [
 //   "Laravel Blade": 60,
 //   AlpineJS: 60,
 // };
-const softwareSkills = [
+const technology = [
   "HTML",
   "CSS",
   "JS",
@@ -33,7 +33,7 @@ const softwareSkills = [
   "RWD",
   "WordPress",
   "ACF",
-  "Bundlers ( Webpack)",
+  "Bundlers ( Webpack, Vite )",
   "TailwindCSS",
   "Bootstrap 5",
   "Laravel Blade",
@@ -55,8 +55,8 @@ const learning = ["Astro", "React", "Typescript"];
 ---
 
 <div class="grid gap-6 md:grid-cols-3">
-  <SkillsCard title="Software" color="red">
-    {softwareSkills.map((skill) => <li>{skill}</li>)}
+  <SkillsCard title="Technology" color="red">
+    {technology.map((skill) => <li>{skill}</li>)}
   </SkillsCard>
   <SkillsCard title="Soft skills" color="orange">
     {softSkills.map((skill) => <li>{skill}</li>)}
