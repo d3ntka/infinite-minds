@@ -1,7 +1,7 @@
 ---
 active: true
 title: "Willow"
-description: "Fun project"
+description: "Fun 8 hour test project"
 date: 2023-10-01
 links: {
     github: "https://github.com/d3ntka/willow",

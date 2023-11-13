@@ -13,6 +13,6 @@ image: {
     alt: "redacted",
 }
 tags: [
-    "Vite", "TailwindCSS", "ES6", "ACF", "Wordpress", "AlpineJS",
+    "Vite", "TailwindCSS", "ES6", "ACF", "Wordpress", "AlpineJS","JSON/XML"
 ]
 ---
